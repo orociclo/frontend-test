@@ -1,0 +1,29 @@
+.divFullPersonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;  
+  justify-content: center;
+}
+
+.divFullPersonData {
+  margin: auto;
+}
+
+.FullPersonData {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: left; 
+}
+
+.FullPersonThumbnail {
+  margin: auto;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 250px;
+  max-height: 200px;
+}

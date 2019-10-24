@@ -8,13 +8,3 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
-.Person:hover,
-.PPersonactive {
-    background-color: #C0DDF5;
-}
-
-.Author {
-    margin: 16px 0;
-    color: #ccc;
-}

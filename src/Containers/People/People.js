@@ -2,12 +2,14 @@ import React, { Component } from "react";
 
 import "./People.css";
 
-import Person from "../../Components/Person/Person"
+import Person from "../../Components/Person/Person";
+import FullPerson from "../../Components/FullPerson/FullPerson";
+
 
 class PeopleList extends Component {
   state = {
     people: [ { id: 0, name: "Feaching people. Please Wait..." } ],
-    selectedPersonId: null,
+    selectedPersonData: null,
     error: false
   }
 
@@ -30,15 +32,15 @@ class PeopleList extends Component {
   }
 
   personSelectedHandler = (id) => {
-      // this.setState({selectedPersonId: id});
-      console.log(id);
+    const [fullPersonData] = this.state.people.filter(person => person.id === id);
+    this.setState({selectedPersonData: fullPersonData});
+    console.log(fullPersonData);
   }
 
   render () {
     const { state,  } = this;
     let people = <p style={{textAlign: 'center'}}>Feching People went wrong!</p>;
     if (!this.state.error && typeof(state.people) !== "string" ) {
-      console.log(state.people);
       people = state.people.map(person => {
         return <Person 
           key={person.id} 
@@ -48,13 +50,19 @@ class PeopleList extends Component {
       });
     }
     return (
-      <div>
-      <section>
-        FullPerson
-        {/* <FullPerson id={this.state.selectedPostId} /> */}
+      <div className="divContainer">
+      <section className="FullPerson">
+          { this.state.selectedPersonData
+          ? <FullPerson 
+              info={this.state.selectedPersonData}
+            />
+          : null
+          }
       </section>
-      <section className="People">
-        {people}
+      <section>
+        <div className="People">
+          {people}
+        </div>
       </section>
       </div>);
     }
