@@ -3,11 +3,19 @@ import React from "react";
 import "./FullPerson.css";
 
 const fullPerson = (props) => {
+
+  const ya = () => {
+    console.log("ya");
+  }
   console.log(props.info)
   return (
     <div className="divFullPersonContainer">
       <div className="FullPersonThumbnail">
-        <img src={props.info.thumbnail} alt="Thumbnail"></img>
+        <img
+          src={props.info.thumbnail}
+          onLoad={ya}
+          alt="Thumbnail">
+        </img>
       </div>
       <div className="divFullPersonData">
         <div className="FullPersonData">

@@ -30,3 +30,10 @@ img {
   max-width: 300px;
   max-height: 200px;
 }
+
+img::before {
+  display: none;
+  content: '';
+  /* padding-top: calc(100% * 2 / 3); */
+  /* You could reduce this expression with a preprocessor or by doing the math. I've kept the longer form in `calc()` to make the math more readable for this demo. */
+}

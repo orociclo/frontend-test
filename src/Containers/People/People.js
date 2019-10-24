@@ -66,10 +66,7 @@ class PeopleList extends Component {
               {people}
             </div>
            
-          }
-           {/* <div className="People">
-              {people}
-            </div> */}      
+          } 
       </section>
       </div>);
     }
