@@ -5,6 +5,11 @@
   justify-content: space-between;
 }
 
+.sectionPeople {
+  text-align: center;
+  width: 100%;
+}
+
 .People {
   height: 30vh;
   display: flex;
@@ -13,7 +18,7 @@
   justify-content: center;
   width: 95%;
   margin: auto;
-  height: 33vh;
+  height: 40vh;
   overflow-y: scroll;
 }
  
@@ -29,6 +34,9 @@
   margin: auto;
   margin-bottom: 10px;
   box-sizing: border-box;    
-  height: 33vh;
+  height: 40vh;
   overflow-y: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://image.freepik.com/free-photo/rain-forest-with-dirt-road_2379-392.jpg');
 }

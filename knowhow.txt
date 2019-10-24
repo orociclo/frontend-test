@@ -10,3 +10,8 @@ Create basic structure of app, add folder with node_modules:
 Create repository on GitHub and connect the proyect frontend-test with it.
 
 Fetch json file of Brastlewark.
+
+Build React Containers and Components
+
+Set css
+

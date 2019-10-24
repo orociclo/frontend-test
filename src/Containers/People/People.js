@@ -34,18 +34,16 @@ class PeopleList extends Component {
   personSelectedHandler = (id) => {
     const [fullPersonData] = this.state.people.filter(person => person.id === id);
     this.setState({selectedPersonData: fullPersonData});
-    console.log(fullPersonData);
   }
 
   render () {
-    const { state,  } = this;
+    const { state } = this;
     let people = <p style={{textAlign: 'center'}}>Feching People went wrong!</p>;
     if (!this.state.error && typeof(state.people) !== "string" ) {
       people = state.people.map(person => {
         return <Person 
           key={person.id} 
           name={person.name} 
-          // author={person.author}
           clicked={() => this.personSelectedHandler(person.id)} />;
       });
     }
@@ -59,10 +57,19 @@ class PeopleList extends Component {
           : null
           }
       </section>
-      <section>
-        <div className="People">
-          {people}
-        </div>
+      <section className="sectionPeople">     
+          { this.state.people.length < 2
+          ? <label className="Fetching">
+              Feaching people. Please Wait...
+            </label>
+          : <div className="People">
+              {people}
+            </div>
+           
+          }
+           {/* <div className="People">
+              {people}
+            </div> */}      
       </section>
       </div>);
     }
