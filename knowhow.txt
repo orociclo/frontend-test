@@ -1,6 +1,7 @@
 Steps:
 
 Creating a new react app: 
+
 Install the libray "create- react app" on the local machine : 
 	npm install create-react-app -g
 Create basic structure of app, add folder with node_modules:
@@ -13,5 +14,9 @@ Fetch json file of Brastlewark.
 
 Build React Containers and Components
 
-Set css
+Set css 
+
+Overkill this App with Redux
+
+
 
