@@ -6,7 +6,7 @@ import Person from "../../Components/Person/Person";
 import FullPerson from "../../Components/FullPerson/FullPerson";
 
 
-class PeopleList extends Component {
+class People extends Component {
   state = {
     people: [ { id: 0, name: "Feaching people. Please Wait..." } ],
     selectedPersonData: null,
@@ -72,4 +72,4 @@ class PeopleList extends Component {
     }
 }
 
-export default PeopleList;
+export default People;

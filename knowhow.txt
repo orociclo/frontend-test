@@ -16,9 +16,9 @@ Build React Containers and Components
 
 Set css 
 
-Overkill this App with Redux is not considered.
+Overkill this App with Redux is not considered, it need another library for fetch data
 
-Testing tools: 
+Testing tools: Jest Enzyme
 
 
 
