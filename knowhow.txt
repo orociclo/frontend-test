@@ -16,7 +16,11 @@ Build React Containers and Components
 
 Set css 
 
-Overkill this App with Redux
+Overkill this App with Redux is not considered.
+
+Testing tools: 
+
+
 
 
 
